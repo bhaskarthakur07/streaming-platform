@@ -1,0 +1,133 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #18181b;
+  color: #fff;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #9147ff;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  margin-top: 1rem;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  padding: 1rem;
+  background-color: #1f1f23;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar ul li {
+  margin: 0.5rem 0;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Video Player and Info */
+.player {
+  margin-bottom: 2rem;
+}
+
+.stream-info {
+  margin-top: 0.5rem;
+}
+
+.stream-info h2 {
+  font-size: 1.5rem;
+}
+
+.stream-info .description {
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+/* Video Grid */
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.video-card {
+  position: relative;
+  width: 240px;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #2c2c31;
+  transition: transform 0.2s;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+}
+
+.video-card img {
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  padding: 0.5rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  width: 100%;
+  color: #fff;
+}
+
+.overlay h3, .overlay p, .overlay span {
+  margin: 0;
+}

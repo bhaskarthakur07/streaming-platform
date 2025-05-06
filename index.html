@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StreamZone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">🎮 StreamZone</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Browse</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Layout -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Top Live Channels</h2>
+      <ul>
+        <li>🔴 GamerRick - Apex Legends</li>
+        <li>🟢 LunaStar - Minecraft</li>
+        <li>🟠 ProZerg - StarCraft II</li>
+        <li>🟣 PixelPro - Valorant</li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Video Player -->
+      <section class="player">
+        <iframe id="youtube-player" width="100%" height="500"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                frameborder="0" allowfullscreen></iframe>
+        <div class="stream-info">
+          <h2>GamerRick - Apex Legends</h2>
+          <p>👥 5,421 viewers</p>
+          <p class="description">
+            Welcome to my Apex Legends stream! Join the action, comment in chat, and let’s climb the ranks together!
+          </p>
+        </div>
+      </section>
+
+      <!-- Video Grid -->
+      <section class="video-grid">
+        <div class="video-card" onclick="loadStream('dQw4w9WgXcQ', 'GamerRick', 'Apex Legends', 5421)">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Stream 1">
+          <div class="overlay">
+            <h3>GamerRick</h3>
+            <p>Apex Legends</p>
+            <span>🔴 5.4K</span>
+          </div>
+        </div>
+
+        <div class="video-card" onclick="loadStream('3JZ_D3ELwOQ', 'LunaStar', 'Minecraft', 312_
